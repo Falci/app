@@ -1,24 +1,49 @@
+html, body {
+  height: 100%;
+}
+
 body {
   color: #FFF;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #6f5499;
+
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+  background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+  background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+  background-repeat: repeat-x;
 }
 
 .mobile{
-  background-color: #000;
-  border: 1px solid #CCC;
-  box-shadow: #CCC 15px 15px 1px;
-  width: 40vmin;
-  height: 75vmin;
-  border-radius: 15px;
-  padding: 22px 15px 80px 15px;
-  box-sizing: border-box;
-  margin: 10px auto;
-  min-width: 270px;
-  min-height: 480px;
+  height: 100%;
 }
 
+@media (min-width: 768px) {
+
+  .mobile{
+    background-color: #000;
+    border: 1px solid #CCC;
+    box-shadow: #000 5px 5px 17px;
+    width: 40vmin;
+    height: 75vmin;
+    border-radius: 15px;
+    padding: 22px 15px 80px 15px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    min-width: 270px;
+    min-height: 480px;
+  }
+}
+
+
 .screen {
-  background-image: url('https://placeimg.com/300/500/nature');
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  /*background-image: url('https://placeimg.com/300/500/nature');*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
