@@ -1,0 +1,92 @@
+body {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile{
+  background-color: #000;
+  border: 1px solid #CCC;
+  box-shadow: #CCC 15px 15px 1px;
+  width: 40vmin;
+  height: 71vmin;
+  border-radius: 15px;
+  padding: 22px 15px 28px 15px;
+  box-sizing: border-box;
+  margin: 10px auto;
+  min-width: 270px;
+  min-height: 480px;
+}
+
+.screen {
+  background-image: url('https://placeimg.com/300/500/nature');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  border: 1px solid #CCC;
+  overflow: hidden;
+}
+
+.screen > ul {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  width: 100%;
+}
+
+/* Notification */
+ul.notification {
+  float: right;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  color: #FEFEFE;
+  text-align: right;
+}
+
+ul.notification li{
+  display: inline;
+  margin: 0 1px;
+  font-size: .9em;
+}
+
+
+/* Desktop */
+ul.desktop li{
+  float: left;
+  margin: 0 5px 10px 0;
+}
+
+ul.desktop li a{
+  font-size: .9em;
+  color: #FEFEFE;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: #000 0px 0px 1px;
+}
+
+ul.desktop li img {
+  width: 11vmin;
+  min-width: 73px;
+}
+
+ul.desktop li span {
+  display: block;
+  line-height: 2px;
+}
+
+/* Buttons */
+ul.nav-buttons {
+  position: absolute;
+  bottom: 0;
+  float: right;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 2px;
+  color: #FEFEFE;
+}
+
+ul.nav-buttons li {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
