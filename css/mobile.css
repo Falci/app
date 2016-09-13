@@ -8,9 +8,9 @@ body {
   border: 1px solid #CCC;
   box-shadow: #CCC 15px 15px 1px;
   width: 40vmin;
-  height: 71vmin;
+  height: 75vmin;
   border-radius: 15px;
-  padding: 22px 15px 28px 15px;
+  padding: 22px 15px 80px 15px;
   box-sizing: border-box;
   margin: 10px auto;
   min-width: 270px;
@@ -54,7 +54,9 @@ ul.notification li{
 /* Desktop */
 ul.desktop li{
   float: left;
-  margin: 0 5px 10px 0;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 ul.desktop li a{
@@ -66,8 +68,7 @@ ul.desktop li a{
 }
 
 ul.desktop li img {
-  width: 11vmin;
-  min-width: 73px;
+  width: 90%;
 }
 
 ul.desktop li span {
@@ -83,6 +84,7 @@ ul.nav-buttons {
   background: rgba(0, 0, 0, 0.5);
   padding: 8px 2px;
   color: #FEFEFE;
+  font-size: 1.5em;
 }
 
 ul.nav-buttons li {
