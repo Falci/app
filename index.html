@@ -1,38 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang=en-GB>
   <head>
-    <meta name="charset" content="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset=utf-8>
+    <title>Web Apps</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Some PWA tests">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://app.falci.me/">
     <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Apps">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Apps">
+    <link rel="icon" sizes="256x256" href="/images/logo_256.png">
+    <link rel="apple-touch-icon" href="/images/logo_256.png">
+    <meta name="msapplication-TileImage" content="/images/logo_256.png">
+    <meta name="msapplication-TileColor" content="#0F2E503">
+    <meta name="theme-color" content="#0F2E50"3>
+    <meta property="og:title" content="Web Apps">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content=https://app.falci.me/images/logo_256.png>
+    <meta property="og:url" content="https://app.falci.me/">
+    <meta property="og:description" content="Some PWA test">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://app.falci.me/'">
+    <meta name="twitter:title" content="Web Apps">
+    <meta name="twitter:description" content="Some PWA tests">
+    <meta name="twitter:image" content=https://app.falci.me/images/touch/Airhorner_256.png>
+    <meta name="twitter:creator" content="@fernandofalci">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/mobile.css">
-    <title>app.falci.me</title>
-    <script>
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js', { scope: './' })
-          .then(function(r) {
-            console.log('registered service worker');
-          })
-          .catch(function(whut) {
-            console.error('uh oh... ');
-            console.error(whut);
-          });
-      });
-    </script>
   </head>
   <body>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-2568035-34', 'auto');
-      ga('send', 'pageview');
-
-    </script>
     <div class="mobile">
       <div class="screen">
         <ul class="notification">
@@ -105,5 +106,26 @@
         </ul>
       </div>
     </div>
+    <script>
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js', { scope: './' })
+          .then(function(r) {
+            console.log('registered service worker');
+          })
+          .catch(function(whut) {
+            console.error('uh oh... ');
+            console.error(whut);
+          });
+      });
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2568035-34', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
