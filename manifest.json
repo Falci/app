@@ -22,5 +22,10 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0F2E50",
-  "theme_color": "#0F2E50"
+  "theme_color": "#0F2E50",
+  "prefer_related_applications": true,
+  "related_applications": [{
+      "platform": "web",
+      "url": "https://app.falci.me"
+  }]
 }
